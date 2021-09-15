@@ -56,7 +56,9 @@ def tap(x, y):
         hide[spot] = False
         hide[mark] = False
         state['mark'] = None
-
+    if(hide == [False]*64):
+      print("all done")
+      return
 
 def draw():
     "Draw image and tiles."
